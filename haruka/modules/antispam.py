@@ -13,7 +13,7 @@ from haruka import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, MESSAGE_DUMP
 from haruka.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from haruka.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from haruka.modules.helper_funcs.filters import CustomFilters
-#from haruka.modules.helper_funcs.misc import send_to_list
+from haruka.modules.helper_funcs.misc import send_to_list
 from haruka.modules.sql.users_sql import get_all_chats
 
 from haruka.modules.translations.strings import tld
