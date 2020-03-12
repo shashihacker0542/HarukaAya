@@ -125,7 +125,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     log_message += "#GBANNED" \
                    "\n<b>Bot Owner:</b> {}" \
                    "\n<b>Originated from:</b> {}" \
-                   "\n<b>Admin:</b> {}" \
+                   "\n<b>SUDO:</b> {}" \
                    "\n<b>Banned User:</b> {}" \
                    "\n<b>Banned User ID:</b> {}" \
                    "\n<b>Event Stamp:</b> {}".format(mention_html(owner.id, owner.first_name),
@@ -186,7 +186,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     if GBAN_LOGS:
         log.edit_text(log_message + "\n<b>Chats affected:</b> {}".format(gbanned_chats), parse_mode=ParseMode.HTML)
     else:
-        send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "Gban complete! (User banned in {} chats)".format(gbanned_chats))
+        send_to_list(bot, SUDO_USERS + SUPPORT_USERS, "GBANNED SUCCESSFULLY! (User banned from {} chats)".format(gbanned_chats))
     
     end_time = time.time()
     gban_time = round((end_time - start_time), 3)
@@ -198,7 +198,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
         message.reply_text("Done! This gban affected {} chats, Took {} sec".format(gbanned_chats, gban_time))
 
     try:
-        bot.send_message(user_id, "You have been globally banned from all groups where I have administrative permissions. If you think that this was a mistake, you may appeal your ban here: @onepunchsupport", parse_mode=ParseMode.HTML)
+        bot.send_message(user_id, "You have been globally banned from all groups where I have administrative permissions. If you think that this was a mistake, you may appeal your ban here: @LucySupportChat", parse_mode=ParseMode.HTML)
     except:
         pass # bot probably blocked by user
 
