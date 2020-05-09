@@ -11,8 +11,7 @@ Alternatively, [find me on telegram](https://t.me/RealAkito)! (Keep all support 
 You can also join our support group [here!](https://t.me/HarukaAyaBot)
 (Keep in the mind that we does not support any fork of Haruka Aya.)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nitin1818/HarukaAya/tree/Nitin1818-update-1)
-## Thanks to
+# Private
 
 * MrYacha - For pYanaBot :3
 * Skittle - for memes and sticker stuff
